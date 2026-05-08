@@ -1,0 +1,439 @@
+<?xml version="1.0" ?>
+<robot name="darkie_maze_urdf" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find darkie_maze_urdf_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find darkie_maze_urdf_description)/urdf/darkie_maze_urdf.ros2control" />
+<xacro:include filename="$(find darkie_maze_urdf_description)/urdf/darkie_maze_urdf.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.00014457353315521589 0.002656400548809099 0.03584925713705785" rpy="0 0 0"/>
+    <mass value="0.29390296310653463"/>
+    <inertia ixx="0.001205" iyy="0.000551" izz="0.001276" ixy="-1e-06" iyz="-3.2e-05" ixz="-2e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find darkie_maze_urdf_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find darkie_maze_urdf_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lidar_top_1">
+  <inertial>
+    <origin xyz="-7.535587109046362e-07 0.00014401514588190112 0.010035646910176527" rpy="0 0 0"/>
+    <mass value="0.057544028866058625"/>
+    <inertia ixx="1.5e-05" iyy="1.7e-05" izz="2.9e-05" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0005 -0.0992" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find darkie_maze_urdf_description)/meshes/lidar_top_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0005 -0.0992" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find darkie_maze_urdf_description)/meshes/lidar_top_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lidar_bottom_1">
+  <inertial>
+    <origin xyz="-0.03099324634836214 -0.03846362431223608 0.002037131300966083" rpy="0 0 0"/>
+    <mass value="0.04351090502849985"/>
+    <inertia ixx="3.2e-05" iyy="1.1e-05" izz="4.2e-05" ixy="0.0" iyz="-2e-06" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.031 -0.0225 -0.092" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find darkie_maze_urdf_description)/meshes/lidar_bottom_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.031 -0.0225 -0.092" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find darkie_maze_urdf_description)/meshes/lidar_bottom_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="right_vl53lohsensor_1">
+  <inertial>
+    <origin xyz="-0.0046038229336554035 0.0010000010417378295 -0.003320723007513314" rpy="0 0 0"/>
+    <mass value="0.0010511823088703786"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.052 -0.0 -0.032" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find darkie_maze_urdf_description)/meshes/right_vl53lohsensor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.052 -0.0 -0.032" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find darkie_maze_urdf_description)/meshes/right_vl53lohsensor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_rb_1">
+  <inertial>
+    <origin xyz="0.007892487455887963 1.1324507998011768e-09 1.474514954580286e-16" rpy="0 0 0"/>
+    <mass value="0.027706932944527023"/>
+    <inertia ixx="2e-05" iyy="1e-05" izz="1e-05" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.052 0.055 -0.01125" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find darkie_maze_urdf_description)/meshes/wheel_rb_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.052 0.055 -0.01125" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find darkie_maze_urdf_description)/meshes/wheel_rb_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_r_1">
+  <inertial>
+    <origin xyz="0.00789248745588797 3.752553823233029e-14 1.474514954580286e-16" rpy="0 0 0"/>
+    <mass value="0.027706932944527026"/>
+    <inertia ixx="2e-05" iyy="1e-05" izz="1e-05" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.052 -0.055 -0.01125" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find darkie_maze_urdf_description)/meshes/wheel_r_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.052 -0.055 -0.01125" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find darkie_maze_urdf_description)/meshes/wheel_r_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_l_1">
+  <inertial>
+    <origin xyz="-0.007892487455887977 -1.8780810240315304e-13 1.2836953722228372e-16" rpy="0 0 0"/>
+    <mass value="0.027706932944526738"/>
+    <inertia ixx="2e-05" iyy="1e-05" izz="1e-05" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.052 -0.055 -0.01125" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find darkie_maze_urdf_description)/meshes/wheel_l_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.052 -0.055 -0.01125" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find darkie_maze_urdf_description)/meshes/wheel_l_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_lb_1">
+  <inertial>
+    <origin xyz="-0.007892487455887998 1.1326760709917671e-09 1.1102230246251565e-16" rpy="0 0 0"/>
+    <mass value="0.02770693294452675"/>
+    <inertia ixx="2e-05" iyy="1e-05" izz="1e-05" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.052 0.055 -0.01125" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find darkie_maze_urdf_description)/meshes/wheel_lb_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.052 0.055 -0.01125" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find darkie_maze_urdf_description)/meshes/wheel_lb_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="victim_motor_1">
+  <inertial>
+    <origin xyz="-3.670181655262696e-12 0.007496344867519475 0.005410423564407352" rpy="0 0 0"/>
+    <mass value="0.022320490130029815"/>
+    <inertia ixx="4e-06" iyy="9e-06" izz="1.3e-05" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 0.075 -0.0586" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find darkie_maze_urdf_description)/meshes/victim_motor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 0.075 -0.0586" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find darkie_maze_urdf_description)/meshes/victim_motor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cam_left_1">
+  <inertial>
+    <origin xyz="0.0058314771754508915 -4.535915685835823e-14 -0.013831602834403017" rpy="0 0 0"/>
+    <mass value="0.0031093626927875245"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.055246 -0.0 -0.090172" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find darkie_maze_urdf_description)/meshes/cam_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.055246 -0.0 -0.090172" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find darkie_maze_urdf_description)/meshes/cam_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="raspberry_1">
+  <inertial>
+    <origin xyz="-0.049478316640243214 -0.026577635838432034 0.003738508801121504" rpy="0 0 0"/>
+    <mass value="0.02567438212333893"/>
+    <inertia ixx="6e-06" iyy="1.6e-05" izz="2.2e-05" ixy="-1e-06" iyz="0.0" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.039 -0.0825 -0.0786" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find darkie_maze_urdf_description)/meshes/raspberry_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.039 -0.0825 -0.0786" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find darkie_maze_urdf_description)/meshes/raspberry_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cam_right_1">
+  <inertial>
+    <origin xyz="-0.0058314771754508846 -4.536708354738808e-14 -0.013831602834403031" rpy="0 0 0"/>
+    <mass value="0.0031093626927875227"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.055246 -0.0 -0.090172" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find darkie_maze_urdf_description)/meshes/cam_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.055246 -0.0 -0.090172" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find darkie_maze_urdf_description)/meshes/cam_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="right_vl53Loh_1">
+  <inertial>
+    <origin xyz="0.0006078258272393805 1.0132924640419289e-09 -0.006099999999999984" rpy="0 0 0"/>
+    <mass value="0.0007203610395874502"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.051 -0.001 -0.029" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find darkie_maze_urdf_description)/meshes/right_vl53Loh_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.051 -0.001 -0.029" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find darkie_maze_urdf_description)/meshes/right_vl53Loh_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="45_vl53Loh_1">
+  <inertial>
+    <origin xyz="0.00043004016915793725 0.00043011912104089223 -0.0060999999999999804" rpy="0 0 0"/>
+    <mass value="0.0007203610395874463"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.054849 -0.088121 -0.0938" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find darkie_maze_urdf_description)/meshes/45_vl53Loh_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.054849 -0.088121 -0.0938" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find darkie_maze_urdf_description)/meshes/45_vl53Loh_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="forward_vl53Loh_1">
+  <inertial>
+    <origin xyz="-1.349985175030193e-14 0.0011078269001230656 -0.0050999999999999795" rpy="0 0 0"/>
+    <mass value="0.000720361039587451"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 -0.087 -0.0485" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find darkie_maze_urdf_description)/meshes/forward_vl53Loh_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 -0.087 -0.0485" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find darkie_maze_urdf_description)/meshes/forward_vl53Loh_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="colorsensor_1">
+  <inertial>
+    <origin xyz="-2.894187717992555e-15 -0.005499998807907108 -3.4643270095192306e-05" rpy="0 0 0"/>
+    <mass value="0.0016776553040116762"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0855 0.0035" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find darkie_maze_urdf_description)/meshes/colorsensor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0855 0.0035" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find darkie_maze_urdf_description)/meshes/colorsensor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Revolute 7" type="continuous">
+  <origin xyz="-0.031 -0.022 0.0072" rpy="0 0 0"/>
+  <parent link="lidar_bottom_1"/>
+  <child link="lidar_top_1"/>
+  <axis xyz="0.0 -0.0 1.0"/>
+</joint>
+
+<joint name="Rigid 11" type="fixed">
+  <origin xyz="0.031 0.0225 0.092" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="lidar_bottom_1"/>
+</joint>
+
+<joint name="Rigid 15" type="fixed">
+  <origin xyz="0.052 0.0 0.032" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="right_vl53lohsensor_1"/>
+</joint>
+
+<joint name="Revolute 16" type="continuous">
+  <origin xyz="0.052 -0.055 0.01125" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="wheel_rb_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Revolute 17" type="continuous">
+  <origin xyz="0.052 0.055 0.01125" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="wheel_r_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Revolute 18" type="continuous">
+  <origin xyz="-0.052 0.055 0.01125" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="wheel_l_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Revolute 19" type="continuous">
+  <origin xyz="-0.052 -0.055 0.01125" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="wheel_lb_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Revolute 20" type="continuous">
+  <origin xyz="0.0 -0.075 0.0586" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="victim_motor_1"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+</joint>
+
+<joint name="Rigid 23" type="fixed">
+  <origin xyz="-0.055246 0.0 0.090172" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="cam_left_1"/>
+</joint>
+
+<joint name="Rigid 24" type="fixed">
+  <origin xyz="0.039 0.0825 0.0786" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="raspberry_1"/>
+</joint>
+
+<joint name="Rigid 25" type="fixed">
+  <origin xyz="0.055246 0.0 0.090172" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="cam_right_1"/>
+</joint>
+
+<joint name="Rigid 26" type="fixed">
+  <origin xyz="-0.001 0.001 -0.003" rpy="0 0 0"/>
+  <parent link="right_vl53lohsensor_1"/>
+  <child link="right_vl53Loh_1"/>
+</joint>
+
+<joint name="Rigid 27" type="fixed">
+  <origin xyz="0.054849 0.088121 0.0938" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="45_vl53Loh_1"/>
+</joint>
+
+<joint name="Rigid 28" type="fixed">
+  <origin xyz="0.0 0.087 0.0485" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="forward_vl53Loh_1"/>
+</joint>
+
+<joint name="Rigid 29" type="fixed">
+  <origin xyz="0.0 0.0855 -0.0035" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="colorsensor_1"/>
+</joint>
+
+</robot>
