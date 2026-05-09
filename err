@@ -56,6 +56,31 @@ darkie@Darkie32:~$ ros2 service list | grep controller
 
 
 
+buntu@Ubuntu:~$ ros2 node info /controller_manager
+/controller_manager
+  Subscribers:
+    /controller_manager/robot_description: std_msgs/msg/String
+    /parameter_events: rcl_interfaces/msg/ParameterEvent
+  Publishers:
+    /parameter_events: rcl_interfaces/msg/ParameterEvent
+    /rosout: rcl_interfaces/msg/Log
+  Service Servers:
+    /controller_manager/describe_parameters: rcl_interfaces/srv/DescribeParameters
+    /controller_manager/get_parameter_types: rcl_interfaces/srv/GetParameterTypes
+    /controller_manager/get_parameters: rcl_interfaces/srv/GetParameters
+    /controller_manager/list_parameters: rcl_interfaces/srv/ListParameters
+    /controller_manager/set_parameters: rcl_interfaces/srv/SetParameters
+    /controller_manager/set_parameters_atomically: rcl_interfaces/srv/SetParametersAtomically
+  Service Clients:
+
+  Action Servers:
+
+  Action Clients:
+
+
+
+
+
 
 
 spawner-4] [INFO] [1778358302.787850907] [spawner_diff_drive_controller]: waiting for service /controller_manager/list_controllers to become available...
