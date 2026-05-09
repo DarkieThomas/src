@@ -26,3 +26,8 @@ ros2_control_node-2] [WARN] [1778352694.265820438] [controller_manager]: [Deprec
 
 
 [ERROR] [ros2-4]: process has died [pid 3536, exit code 2, cmd 'ros2 control load_controller --set-state active diff_drive_controller'].
+
+
+
+
+ros2_control_node-2] [WARN] [1778357295.768654557] [controller_manager]: Could not enable FIFO RT scheduling policy: with error number <1>(Operation not permitted). See [https://control.ros.org/master/doc/ros2_control/controller_manager/doc/userdoc.html] for details on how to enable realtime scheduling.
