@@ -12,3 +12,11 @@ ERROR] [launch]: Caught exception in launch (see debug for traceback): Caught mu
 [ros2_control_node-2] #1    Object "/usr/lib/aarch64-linux-gnu/libc.so.6", at 0xffffaaa7a83b, in raise
 [ros2_control_node-2] #0    Object "/usr/lib/aarch64-linux-gnu/libc.so.6", at 0xffffaaac2008, in 
 [ros2_control_node-2] Aborted (Signal sent by tkill() 3034 1000)
+
+
+ros2_control_node-2] [WARN] [1778352694.265820438] [controller_manager]: [Deprecated] Passing the robot description parameter directly to the control_manager node is deprecated. Use '~/robot_description' topic from 'robot_state_publisher' instead.
+[ros2_control_node-2] [INFO] [1778352694.275532682] [resource_manager]: Loading hardware 'DynamixelSystem' 
+[ros2_control_node-2] [INFO] [1778352694.291459993] [resource_manager]: Initialize hardware 'DynamixelSystem' 
+[ros2_control_node-2] terminate called after throwing an instance of 'std::out_of_range'
+[ros2_control_node-2]   what():  _Map_base::at
+[ros2_control_node-2] Stack trace (most recent call last):
