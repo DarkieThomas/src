@@ -31,3 +31,11 @@ ros2_control_node-2] [WARN] [1778352694.265820438] [controller_manager]: [Deprec
 
 
 ros2_control_node-2] [WARN] [1778357295.768654557] [controller_manager]: Could not enable FIFO RT scheduling policy: with error number <1>(Operation not permitted). See [https://control.ros.org/master/doc/ros2_control/controller_manager/doc/userdoc.html] for details on how to enable realtime scheduling.
+
+
+
+darkie@Darkie32:~$ ros2 node list
+/controller_manager
+/robot_state_publisher
+/spawner_diff_drive_controller
+/spawner_joint_state_broadcaster
