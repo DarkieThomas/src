@@ -53,3 +53,10 @@ darkie@Darkie32:~$ ros2 service list | grep controller
 /spawner_diff_drive_controller/list_parameters
 /spawner_diff_drive_controller/set_parameters
 /spawner_diff_drive_controller/set_parameters_atomically
+
+
+
+
+
+spawner-4] [INFO] [1778358302.787850907] [spawner_diff_drive_controller]: waiting for service /controller_manager/list_controllers to become available...
+[spawner-3] [INFO] [1778358302.826184327] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
