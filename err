@@ -1,3 +1,14 @@
 ERROR] [launch]: Caught exception in launch (see debug for traceback): Caught multiple exceptions when trying to load file of format [py]:
  - ExpatError: mismatched tag: line 481, column 2
  - InvalidFrontendLaunchFileError: The launch file may have a syntax error, or its format is unknown
+
+
+
+[ros2_control_node-2] #6    Object "/usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30", at 0xffffaacc2e93, in __cxa_throw
+[ros2_control_node-2] #5    Object "/usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30", at 0xffffaacc2baf, in std::terminate()
+[ros2_control_node-2] #4    Object "/usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30", at 0xffffaacc2b4b, in 
+[ros2_control_node-2] #3    Object "/usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30", at 0xffffaacc53cf, in __gnu_cxx::__verbose_terminate_handler()
+[ros2_control_node-2] #2    Object "/usr/lib/aarch64-linux-gnu/libc.so.6", at 0xffffaaa67133, in abort
+[ros2_control_node-2] #1    Object "/usr/lib/aarch64-linux-gnu/libc.so.6", at 0xffffaaa7a83b, in raise
+[ros2_control_node-2] #0    Object "/usr/lib/aarch64-linux-gnu/libc.so.6", at 0xffffaaac2008, in 
+[ros2_control_node-2] Aborted (Signal sent by tkill() 3034 1000)
