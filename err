@@ -39,3 +39,17 @@ darkie@Darkie32:~$ ros2 node list
 /robot_state_publisher
 /spawner_diff_drive_controller
 /spawner_joint_state_broadcaster
+darkie@Darkie32:~$ ros2 service list | grep controller
+/controller_manager/describe_parameters
+/controller_manager/get_parameter_types
+/controller_manager/get_parameters
+/controller_manager/list_controllers
+/controller_manager/list_parameters
+/controller_manager/set_parameters
+/controller_manager/set_parameters_atomically
+/spawner_diff_drive_controller/describe_parameters
+/spawner_diff_drive_controller/get_parameter_types
+/spawner_diff_drive_controller/get_parameters
+/spawner_diff_drive_controller/list_parameters
+/spawner_diff_drive_controller/set_parameters
+/spawner_diff_drive_controller/set_parameters_atomically
