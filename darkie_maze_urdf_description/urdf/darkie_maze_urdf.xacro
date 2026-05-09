@@ -461,7 +461,7 @@
   </joint>
 
   <!-- LEFT REAR -->
-  <joint name=Revolute 19">
+  <joint name="Revolute 19">
     <command_interface name="velocity"/>
     <state_interface name="velocity"/>
     <state_interface name="position"/>
