@@ -20,3 +20,6 @@ ros2_control_node-2] [WARN] [1778352694.265820438] [controller_manager]: [Deprec
 [ros2_control_node-2] terminate called after throwing an instance of 'std::out_of_range'
 [ros2_control_node-2]   what():  _Map_base::at
 [ros2_control_node-2] Stack trace (most recent call last):
+
+
+[ERROR] [ros2_control_node-2]: process has died [pid 3451, exit code -6, cmd '/opt/ros/humble/lib/controller_manager/ros2_control_node --ros-args --params-file /tmp/launch_params_3083bwty --params-file /home/darkie/ros2_ws/install/darkie/share/darkie/config/controllers.yaml'].
