@@ -143,6 +143,40 @@ ros2_control_node-2] [ERROR] [1778528195.796606570] [dynamixel_hardware_interfac
 
 
 
+[ros2_control_node-2] [InitTorqueStates][comm_id:004][ID:004] Current torque state: OFF
+[ros2_control_node-2] [INFO] [1778529236.146670485] [dynamixel_hardware_interface]: [InitItem][comm_id:4][ID:4] item_name: Drive Mode	data: 0
+[ros2_control_node-2] [INFO] [1778529236.149772699] [dynamixel_hardware_interface]: [InitItem][comm_id:4][ID:4] item_name: Position D Gain	data: 100
+[ros2_control_node-2] [INFO] [1778529236.152976944] [dynamixel_hardware_interface]: [InitItem][comm_id:4][ID:4] item_name: Position I Gain	data: 100
+[ros2_control_node-2] [INFO] [1778529236.156178688] [dynamixel_hardware_interface]: [InitItem][comm_id:4][ID:4] item_name: Position P Gain	data: 800
+[ros2_control_node-2] [comm_id:005][ID:005] Request ping	 - Ping succeeded. Dynamixel model number : 1060 (xl430_w250.model)
+[ros2_control_node-2] [InitTorqueStates][comm_id:005][ID:005] Current torque state: OFF
+[ros2_control_node-2] [INFO] [1778529236.197338974] [dynamixel_hardware_interface]: [InitItem][comm_id:5][ID:5] item_name: Drive Mode	data: 0
+[ros2_control_node-2] [INFO] [1778529236.200437282] [dynamixel_hardware_interface]: [InitItem][comm_id:5][ID:5] item_name: Position D Gain	data: 100
+[ros2_control_node-2] [INFO] [1778529236.203696578] [dynamixel_hardware_interface]: [InitItem][comm_id:5][ID:5] item_name: Position I Gain	data: 100
+[ros2_control_node-2] [INFO] [1778529236.206909885] [dynamixel_hardware_interface]: [InitItem][comm_id:5][ID:5] item_name: Position P Gain	data: 800
+[ros2_control_node-2] [INFO] [1778529236.210321420] [dynamixel_hardware_interface]: $$$$$ Init Dxl Read Items
+[ros2_control_node-2] [comm_id:001][ID:001] Cannot find control item in model file : Present Current
+[ros2_control_node-2] [ERROR] [1778529236.216150434] [dynamixel_hardware_interface]: Error: InitDxlReadItems
+[ros2_control_node-2] [INFO] [1778529236.216877147] [resource_manager]: Failed to initialize hardware 'DynamixelSystem'
+[ros2_control_node-2] [WARN] [1778529236.216995740] [resource_manager]: System hardware component 'DynamixelSystem' from plugin 'dynamixel_hardware_interface/DynamixelHardware' failed to initialize.
+[ros2_control_node-2] terminate called after throwing an instance of 'std::runtime_error'
+[ros2_control_node-2]   what():  Wrong state or command interface configuration.
+[ros2_control_node-2] missing state interfaces:
+[ros2_control_node-2] ' left_front_wheel_joint/velocity '	' left_front_wheel_joint/position '	' left_front_wheel_joint/effort '	' right_front_wheel_joint/velocity '	' right_front_wheel_joint/position '	' right_front_wheel_joint/effort '	' left_rear_wheel_joint/velocity '	' left_rear_wheel_joint/position '	' left_rear_wheel_joint/effort '	' right_rear_wheel_joint/velocity '	' right_rear_wheel_joint/position '	' right_rear_wheel_joint/effort '	' victim_joint/velocity '	' victim_joint/position '	' victim_joint/effort '	' dxl1/Present Position '	' dxl1/Present Velocity '	' dxl1/Present Current '	' dxl2/Present Position '	' dxl2/Present Velocity '	' dxl2/Present Current '	' dxl3/Present Position '	' dxl3/Present Velocity '	' dxl3/Present Current '	' dxl4/Present Position '	' dxl4/Present Velocity '	' dxl4/Present Current '	' dxl5/Present Position '	' dxl5/Present Velocity '	' dxl5/Present Current '	
+[ros2_control_node-2] missing command interfaces:
+[ros2_control_node-2] ' left_front_wheel_joint/position '	' left_front_wheel_joint/velocity '	' right_front_wheel_joint/position '	' right_front_wheel_joint/position '	' left_rear_wheel_joint/position '	' left_rear_wheel_joint/position '	' right_rear_wheel_joint/position '	' right_rear_wheel_joint/position '	' victim_joint/position '	' victim_joint/position '	' dxl1/Goal Position '	' dxl2/Goal Position '	' dxl3/Goal Position '	' dxl4/Goal Position '	' dxl5/Goal Position '	
+[ros2_control_node-2] Stack trace (most recent call last):
+[ros2_control_node-2] #15   Object "/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1", at 0xffffffffffffffff, in 
+[ros2_control_node-2] #14   Object "/opt/ros/humble/lib/controller_manager/ros2_control_node", at 0xaaaab700492f, in 
+[ros2_control_node-2] #13   Object "/usr/lib/aarch64-linux-gnu/libc.so.6", at 0xffff9fdd74d7, in __libc_start_main
+[ros2_control_node-2] #12   Object "/usr/lib/aarch64-linux-gnu/libc.so.6", at 0xffff9fdd73ff, in 
+[ros2_control_node-2] #11   Object "/opt/ros/humble/lib/controller_manager/ros2_control_node", at 0xaaaab7003eab, in 
+[ros2_control_node-2] #10   Object "/opt/ros/humble/lib/libcontroller_manager.so", at 0xffffa0481993, in controller_manager::ControllerManager::ControllerManager(std::shared_ptr<rclcpp::Executor>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, rclcpp::NodeOptions const&)
+[ros2_control_node-2] #9    Object "/opt/ros/humble/lib/libcontroller_manager.so", at 0xffffa047cf03, in controller_manager::ControllerManager::init_resource_manager(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+
+
+
+
 
 
 
