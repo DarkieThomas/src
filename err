@@ -133,6 +133,12 @@ dynamixel_hardware_interface]: $$$$$ Init Dxl Read Items
 
 
 
+ros2_control_node-2] [ERROR] [1778528195.796606570] [dynamixel_hardware_interface]: Error: InitDxlReadItems
+[ros2_control_node-2] [INFO] [1778528195.797638764] [resource_manager]: Failed to initialize hardware 'DynamixelSystem'
+[ros2_control_node-2] [WARN] [1778528195.797875327] [resource_manager]: System hardware component 'DynamixelSystem' from plugin 'dynamixel_hardware_interface/DynamixelHardware' failed to initialize.
+[ros2_control_node-2] terminate called after throwing an instance of 'std::runtime_error'
+
+
 
 
 
