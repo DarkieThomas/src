@@ -96,6 +96,38 @@ ros2_control_node-2] [ERROR] [1778525068.404663511] [pluginlib.ClassLoader]: Ski
 
 
 
+dynamixel_hardware_interface]: $$$$$ Init Dxl Read Items
+[ros2_control_node-2] Dynamixel Read Type : sync read
+[ros2_control_node-2] ID : 
+[ros2_control_node-2] Read items : (none)
+[ros2_control_node-2] No Sync Read Item, not setting sync read handler
+[ros2_control_node-2] Success to set SyncRead handler using indirect address
+[ros2_control_node-2] [INFO] [1778527295.612963925] [dynamixel_hardware_interface]: $$$$$ Init Dxl Write Items
+[ros2_control_node-2] Dynamixel Write Type : sync write
+[ros2_control_node-2] ID : 
+[ros2_control_node-2] Write items : (none)
+[ros2_control_node-2] No Sync Write Item, not setting sync write handler
+[ros2_control_node-2] Success to set SyncWrite handler using indirect address
+[ros2_control_node-2] [ERROR] [1778527295.613815563] [dynamixel_hardware_interface]: Error: number of transmission 5, 0, 0
+[ros2_control_node-2] [INFO] [1778527295.614540947] [resource_manager]: Failed to initialize hardware 'DynamixelSystem'
+[ros2_control_node-2] [WARN] [1778527295.614668971] [resource_manager]: System hardware component 'DynamixelSystem' from plugin 'dynamixel_hardware_interface/DynamixelHardware' failed to initialize.
+[ros2_control_node-2] [ERROR] [1778527295.615563370] [controller_manager]: The published robot description file (urdf) seems not to be genuine. The following error was caught:Wrong state or command interface configuration.
+[ros2_control_node-2] missing state interfaces:
+[ros2_control_node-2] ' left_front_wheel_joint/velocity '	' left_front_wheel_joint/position '	' left_front_wheel_joint/effort '	' right_front_wheel_joint/velocity '	' right_front_wheel_joint/position '	' right_front_wheel_joint/effort '	' left_rear_wheel_joint/velocity '	' left_rear_wheel_joint/position '	' left_rear_wheel_joint/effort '	' right_rear_wheel_joint/velocity '	' right_rear_wheel_joint/position '	' right_rear_wheel_joint/effort '	' victim_joint/velocity '	' victim_joint/position '	' victim_joint/effort '	
+[ros2_control_node-2] missing command interfaces:
+[ros2_control_node-2] ' left_front_wheel_joint/position '	' right_front_wheel_joint/position '	' left_rear_wheel_joint/position '	' right_rear_wheel_joint/position '	' victim_joint/position '	
+[INFO] [spawner-3]: process started with pid [5700]
+[INFO] [spawner-4]: process started with pid [5702]
+[spawner-3] [INFO] [1778527304.090379617] [spawner_diff_drive_controller]: waiting for service /controller_manager/list_controllers to become available...
+[spawner-4] [INFO] [1778527306.510954167] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
+[spawner-3] [WARN] [1778527314.127346706] [spawner_diff_drive_controller]: Could not contact service /controller_manager/list_controllers
+[spawner-3] [INFO] [1778527314.137656246] [spawner_diff_drive_controller]: waiting for service /controller_manager/list_controllers to become available...
+^C[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[ros2_control_node-2] [INFO] [1778527315.343422622] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[robot_state_publisher-1] [INFO] [1778527315.345876957] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[ros2_control_node-2] [INFO] [1778527315.380580517] [dynamixel_hardware_interface]: Dynamixel Hardware Stop!
+[ros2_control_node-2] Dynamixel destructor start
+[ros2_control_node-2] Dynamixel destructor end
 
 
 
