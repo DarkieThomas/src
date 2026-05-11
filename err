@@ -176,6 +176,55 @@ ros2_control_node-2] [ERROR] [1778528195.796606570] [dynamixel_hardware_interfac
 
 
 
+[ros2_control_node-2] Dynamixel Read Type : sync read
+[ros2_control_node-2] ID : 1, 2, 3, 4, 
+[ros2_control_node-2] Read items : 	Present Position	Present Velocity	Present Load
+[ros2_control_node-2] set fast sync read (indirect addr) : addr 634, size 10
+[ros2_control_node-2] FastSyncRead handler set up successfully.
+[ros2_control_node-2] Success to set SyncRead handler using indirect address
+[ros2_control_node-2] [INFO] [1778530337.937066210] [dynamixel_hardware_interface]: $$$$$ Init Dxl Write Items
+[ros2_control_node-2] Dynamixel Write Type : sync write
+[ros2_control_node-2] ID : 1, 2, 3, 4, 
+[ros2_control_node-2] Write items : 	Goal Position
+[ros2_control_node-2] set sync write (indirect addr) : addr 224, size 4
+[ros2_control_node-2] Success to set SyncWrite handler using indirect address
+[ros2_control_node-2] [ERROR] [1778530337.984702614] [dynamixel_hardware_interface]: Error: number of transmission 5, 4, 4
+[ros2_control_node-2] [INFO] [1778530337.985414905] [resource_manager]: Failed to initialize hardware 'DynamixelSystem'
+[ros2_control_node-2] [WARN] [1778530337.985527353] [resource_manager]: System hardware component 'DynamixelSystem' from plugin 'dynamixel_hardware_interface/DynamixelHardware' failed to initialize.
+[ros2_control_node-2] terminate called after throwing an instance of 'std::runtime_error'
+[ros2_control_node-2]   what():  Wrong state or command interface configuration.
+[ros2_control_node-2] missing state interfaces:
+[ros2_control_node-2] ' left_front_wheel_joint/velocity '	' left_front_wheel_joint/position '	' left_front_wheel_joint/effort '	' right_front_wheel_joint/velocity '	' right_front_wheel_joint/position '	' right_front_wheel_joint/effort '	' left_rear_wheel_joint/velocity '	' left_rear_wheel_joint/position '	' left_rear_wheel_joint/effort '	' right_rear_wheel_joint/velocity '	' right_rear_wheel_joint/position '	' right_rear_wheel_joint/effort '	' dxl1/Present Position '	' dxl1/Present Velocity '	' dxl1/Present Load '	' dxl2/Present Position '	' dxl2/Present Velocity '	' dxl2/Present Load '	' dxl3/Present Position '	' dxl3/Present Velocity '	' dxl3/Present Load '	' dxl4/Present Position '	' dxl4/Present Velocity '	' dxl4/Present Load '	
+[ros2_control_node-2] missing command interfaces:
+[ros2_control_node-2] ' left_front_wheel_joint/position '	' left_front_wheel_joint/velocity '	' right_front_wheel_joint/position '	' right_front_wheel_joint/position '	' left_rear_wheel_joint/position '	' left_rear_wheel_joint/position '	' right_rear_wheel_joint/position '	' right_rear_wheel_joint/position '	' dxl1/Goal Position '	' dxl2/Goal Position '	' dxl3/Goal Position '	' dxl4/Goal Position '	
+[ros2_control_node-2] Stack trace (most recent call last):
+[ros2_control_node-2] #15   Object "/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1", at 0xffffffffffffffff, in 
+[ros2_control_node-2] #14   Object "/opt/ros/humble/lib/controller_manager/ros2_control_node", at 0xaaaad301492f, in 
+[ros2_control_node-2] #13   Object "/usr/lib/aarch64-linux-gnu/libc.so.6", at 0xffffbd3274d7, in __libc_start_main
+[ros2_control_node-2] #12   Object "/usr/lib/aarch64-linux-gnu/libc.so.6", at 0xffffbd3273ff, in 
+[ros2_control_node-2] #11   Object "/opt/ros/humble/lib/controller_manager/ros2_control_node", at 0xaaaad3013eab, in 
+[ros2_control_node-2] #10   Object "/opt/ros/humble/lib/libcontroller_manager.so", at 0xffffbd9d1993, in controller_manager::ControllerManager::ControllerManager(std::shared_ptr<rclcpp::Executor>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, rclcpp::NodeOptions const&)
+[ros2_control_node-2] #9    Object "/opt/ros/humble/lib/libcontroller_manager.so", at 0xffffbd9ccf03, in controller_manager::ControllerManager::init_resource_manager(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+[ros2_control_node-2] #8    Object "/opt/ros/humble/lib/libhardware_interface.so", at 0xffffbd1a87b7, in hardware_interface::ResourceManager::load_urdf(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)
+[ros2_control_node-2] #7    Object "/opt/ros/humble/lib/libhardware_interface.so", at 0xffffbd1aa1db, in hardware_interface::ResourceManager::validate_storage(std::vector<hardware_interface::HardwareInfo, std::allocator<hardware_interface::HardwareInfo> > const&) const
+[ros2_control_node-2] #6    Object "/usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30", at 0xffffbd582e93, in __cxa_throw
+[ros2_control_node-2] #5    Object "/usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30", at 0xffffbd582baf, in std::terminate()
+[ros2_control_node-2] #4    Object "/usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30", at 0xffffbd582b4b, in 
+[ros2_control_node-2] #3    Object "/usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30", at 0xffffbd5853cf, in __gnu_cxx::__verbose_terminate_handler()
+[ros2_control_node-2] #2    Object "/usr/lib/aarch64-linux-gnu/libc.so.6", at 0xffffbd327133, in abort
+[ros2_control_node-2] #1    Object "/usr/lib/aarch64-linux-gnu/libc.so.6", at 0xffffbd33a83b, in raise
+[ros2_control_node-2] #0    Object "/usr/lib/aarch64-linux-gnu/libc.so.6", at 0xffffbd382008, in 
+[ros2_control_node-2] Aborted (Signal sent by tkill() 7124 1000)
+[INFO] [spawner-3]: process started with pid [7147]
+[ERROR] [ros2_control_node-2]: process has died [pid 7124, exit code -6, cmd '/opt/ros/humble/lib/controller_manager/ros2_control_node --ros-args --params-file /tmp/launch_params_0jogllcy --params-file /home/darkie/ros2_ws/install/darkie/share/darkie/config/controllers.yaml'].
+[INFO] [spawner-4]: process started with pid [7152]
+[spawner-3] [INFO] [1778530346.024158516] [spawner_diff_drive_controller]: waiting for service /controller_manager/list_controllers to become available...
+[spawner-4] [INFO] [1778530347.986081874] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
+^C[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[robot_state_publisher-1] [INFO] [1778530350.389411305] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [robot_state_publisher-1]: process has finished cleanly [pid 7122]
+[INFO] [spawner-3]: process has finished cleanly [pid 7147]
+[INFO] [spawner-4]: process has finished cleanly [pid 7152]
 
 
 
