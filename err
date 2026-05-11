@@ -139,6 +139,8 @@ ros2_control_node-2] [ERROR] [1778528195.796606570] [dynamixel_hardware_interfac
 [ros2_control_node-2] terminate called after throwing an instance of 'std::runtime_error'
 
 
+/home/darkie/ros2_ws/src/dynamixel_hardware_interface/src/dynamixel_hardware_interface.cpp:  RCLCPP_INFO_STREAM(logger_, "$$$$$ Init Dxl Read Items");
+
 
 
 
