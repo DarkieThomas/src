@@ -80,6 +80,8 @@ buntu@Ubuntu:~$ ros2 node info /controller_manager
 
 [ros2_control_node-2] [ERROR] [1778524666.170299645] [controller_manager]: The published robot description file (urdf) seems not to be genuine. The following error was caught:According to the loaded plugin descriptions the class dynamixel_hardware_interface/DynamixelHardware with base class type hardware_interface::SystemInterface does not exist. Declared types are  dynamixel_hardware/DynamixelHardware fake_components/GenericSystem mock_components/GenericSystem test_hardware_components/TestSystemCommandModes test_hardware_components/TestTwoJointSystem
 
+ros2_control_node-2] [ERROR] [1778525068.404663511] [pluginlib.ClassLoader]: Skipped loading plugin with error: XML Document '/home/darkie/ros2_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/dynamixel_hardware_interface_plugin.xml' has no Root Element. This likely means the XML is malformed or missing..
+[ros2_control_node-2] [ERROR] [1778525068.442951005] [pluginlib.ClassLoader]: Skipped loading plugin with error: XML Document '/home/darkie/ros2_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/dynamixel_hardware_interface_plugin.xml' has no Root Element. This likely means the XML is malformed or missing..
 
 
 
