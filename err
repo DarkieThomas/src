@@ -83,6 +83,12 @@ buntu@Ubuntu:~$ ros2 node info /controller_manager
 ros2_control_node-2] [ERROR] [1778525068.404663511] [pluginlib.ClassLoader]: Skipped loading plugin with error: XML Document '/home/darkie/ros2_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/dynamixel_hardware_interface_plugin.xml' has no Root Element. This likely means the XML is malformed or missing..
 [ros2_control_node-2] [ERROR] [1778525068.442951005] [pluginlib.ClassLoader]: Skipped loading plugin with error: XML Document '/home/darkie/ros2_ws/install/dynamixel_hardware_interface/share/dynamixel_hardware_interface/dynamixel_hardware_interface_plugin.xml' has no Root Element. This likely means the XML is malformed or missing..
 
+10.323s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/darkie/ros2_ws/install/dynamixel_workbench_toolbox' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[10.324s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/darkie/ros2_ws/install/dynamixel_sdk_examples' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[10.327s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/darkie/ros2_ws/install/dynamixel_hardware_interface' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[10.328s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/darkie/ros2_ws/install/dynamixel_sdk' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[10.331s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/darkie/ros2_ws/install/darkie_maze_urdf_description' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[10.355s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/darkie/ros2_ws/install/dynamixel_workb
 
 
 
